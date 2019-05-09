@@ -1,5 +1,6 @@
 baseURL = "infinitefingers.com"
 theme = "dot"
+publishDir = "docs"
 
 
 [params]
