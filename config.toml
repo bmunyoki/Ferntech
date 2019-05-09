@@ -1,4 +1,4 @@
-baseURL = "infinitefingers.com"
+baseURL = "https://bmunyoki.github.io/Ferntech/"
 theme = "dot"
 publishDir = "docs"
 
