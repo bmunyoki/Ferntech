@@ -26,7 +26,7 @@ whiteColor = "#ffffff"
     [Languages.en.menu]
     
       [[Languages.en.menu.main]]
-        weight = 2
+        weight = 1
         name = "API Docs"
         url = "/api-docs"
 
@@ -36,58 +36,42 @@ whiteColor = "#ffffff"
         url = "/controller"
 
       [[Languages.en.menu.main]]
-        weight = 2
+        weight = 3
         name = "Faq"
         url = "/faq"
         
       [[Languages.en.menu.main]]
-        weight = 2
-        name = "Tutorials"
-        url = "/tutorials"
-        hasChildren = true
-
-          [[Languages.en.menu.main]]
-          parent = "tutorials"
-          name = "Elements"
-          URL = "/elements"
-          weight = 1
 
           [[Languages.en.menu.main]]
           parent = "tutorials"
           name = "Installation"
           URL = "/installation"
-          weight = 2
+          weight = 7
 
           [[Languages.en.menu.main]]
           parent = "tutorials"
-          name = "Controller"
-          URL = "/controller"
-          weight = 3
-
-          [[Languages.en.menu.main]]
-          parent = "tutorials"
-          name = "Features"
-          URL = "/features"
-          weight = 4
+          name = "Elements"
+          URL = "/elements"
+          weight = 6
 
       [[Languages.en.menu.main]]
-        weight = 2
+        weight = 5
         name = "contact"
-        url = "/contact"
+        url = "https://infinitefingers.us18.list-manage.com/subscribe?u=6d033c7a74b56324c55a1c895&id=161d71d50c"
 
 
 
 
     # banner
     [Languages.en.params.banner]
-      title = "Support Center & Knowledge base"
+      title = "Community & Knowledge base"
       description = "Find advice and answers from our support team fast or get in touch"
       image = "images/if_home.png"
       placeholder = "Have a question? Just ask here or enter terms"
 
     # Topics
     [Languages.en.params.topics]
-      title = "Find your answer by subject"
+      title = "Browse by subject"
     
     # call to action
     [Languages.en.params.cta]
@@ -95,7 +79,7 @@ whiteColor = "#ffffff"
       title = "Get in Touch"
       description = "What to integrate with us? Didn't find an answer to your question? Having challenges integrating with our API? Contact us"
       btnText = "contact us"
-      btnURL = "/contact"
+      btnURL = "https://infinitefingers.us18.list-manage.com/subscribe?u=6d033c7a74b56324c55a1c895&id=161d71d50c"
 
     # contact
     [Languages.en.params.contact]
@@ -115,108 +99,4 @@ whiteColor = "#ffffff"
 
 
 
-  # Franch Language
-  [Languages.fr]
-  languageName = "Fr"
-  weight = 1
-  languageCode = "fr-fr"
-  title = "Doc List"
-  dateFormat = "2 January 2006"
-  home = "Aidez-moi"
-  logo = "DOC LIST"
-  copyright = "Les documents Hugo sont sous copyright © gethugothemes 2018."
-
-    # navigation
-    [Languages.fr.menu]
-    
-      [[Languages.fr.menu.main]]
-        weight = 2
-        name = "API Docs"
-        url = "/api-docs"
-
-      [[Languages.fr.menu.main]]
-        weight = 2
-        name = "Controller"
-        url = "/controller"
-
-      [[Languages.fr.menu.main]]
-        weight = 2
-        name = "Faq"
-        url = "/faq"
-        
-      [[Languages.fr.menu.main]]
-        weight = 2
-        name = "Tutorials"
-        url = "/tutorials"
-        hasChildren = true
-
-          [[Languages.fr.menu.main]]
-          parent = "tutorials"
-          name = "Elements"
-          URL = "/elements"
-          weight = 1
-
-          [[Languages.fr.menu.main]]
-          parent = "tutorials"
-          name = "Installation"
-          URL = "/installation"
-          weight = 2
-
-          [[Languages.fr.menu.main]]
-          parent = "tutorials"
-          name = "Billing and Pricing"
-          URL = "/billing-pricing"
-          weight = 3
-
-          [[Languages.fr.menu.main]]
-          parent = "tutorials"
-          name = "Features"
-          URL = "/features"
-          weight = 4
-
-      [[Languages.fr.menu.main]]
-        weight = 2
-        name = "contact"
-        url = "/contact"
-
-
-    # banner
-    [Languages.fr.params.banner]
-      title = "Comment pouvons nous aider?"
-      description = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
-      image = "images/banner.jpg"
-      placeholder = "Have a question? Just ask here or enter terms"
-
-    # pages
-    [Languages.fr.params.pages]
-      title = "Parcourir tous les sujets"
-    
-    # call to action
-    [Languages.fr.params.cta]
-      enable = true
-      title = "Vous n'avez pas trouvé de réponse à votre question?"
-      description = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
-      btnText = "Contactez nous"
-      btnURL = "fr/contact/"
-
-    # contact
-    [Languages.fr.params.contact]
-      title = "Vous avez des questions"
-      content = "Envoyez le formulaire et confirmez votre adresse e-mail à l'adresse <a class='text-primary' href='https://formspree.io/'>Formspree</a> Ajoutez ensuite les lignes suivantes pour contacter la page YAML Front Matter."
-
-    # footer social icon
-    [[Languages.fr.socialIcon]]
-      icon = "ti-facebook"
-      URL = "/#"
-
-    [[Languages.fr.socialIcon]]
-      icon = "ti-twitter-alt"
-      URL = "/#"
-      
-    [[Languages.fr.socialIcon]]
-      icon = "ti-vimeo-alt"
-      URL = "/#"
-      
-    [[Languages.fr.socialIcon]]
-      icon = "ti-instagram"
-      URL = "/#"
+ 
