@@ -16,7 +16,7 @@ whiteColor = "#ffffff"
   languageName = "En"
   weight = 1
   languageCode = "en-us"
-  title = "Ferntech DOcs"
+  title = "Ferntech Docs"
   dateFormat = "2 January 2006"
   home = "Home"
   logo = "Dot"
@@ -25,6 +25,16 @@ whiteColor = "#ffffff"
     # navigation
     [Languages.en.menu]
     
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "API Docs"
+        url = "/api-docs"
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Controller"
+        url = "/controller"
+
       [[Languages.en.menu.main]]
         weight = 2
         name = "Faq"
@@ -50,8 +60,8 @@ whiteColor = "#ffffff"
 
           [[Languages.en.menu.main]]
           parent = "tutorials"
-          name = "Billing and Pricing"
-          URL = "/billing-pricing"
+          name = "Controller"
+          URL = "/controller"
           weight = 3
 
           [[Languages.en.menu.main]]
@@ -72,7 +82,7 @@ whiteColor = "#ffffff"
     [Languages.en.params.banner]
       title = "Support Center & Knowledge base"
       description = "Find advice and answers from our support team fast or get in touch"
-      image = "images/banner.jpg"
+      image = "images/if_home.png"
       placeholder = "Have a question? Just ask here or enter terms"
 
     # Topics
@@ -82,8 +92,8 @@ whiteColor = "#ffffff"
     # call to action
     [Languages.en.params.cta]
       enable = true
-      title = "Didn't find an answer to your question?"
-      description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+      title = "Get in Touch"
+      description = "What to integrate with us? Didn't find an answer to your question? Having challenges integrating with our API? Contact us"
       btnText = "contact us"
       btnURL = "/contact"
 
@@ -94,19 +104,11 @@ whiteColor = "#ffffff"
 
     # footer social icon
     [[Languages.en.socialIcon]]
-      icon = "ti-facebook"
-      URL = "/#"
-
-    [[Languages.en.socialIcon]]
       icon = "ti-twitter-alt"
       URL = "/#"
       
     [[Languages.en.socialIcon]]
-      icon = "ti-vimeo-alt"
-      URL = "/#"
-      
-    [[Languages.en.socialIcon]]
-      icon = "ti-instagram"
+      icon = "ti-github"
       URL = "/#"
 
 
@@ -129,42 +131,54 @@ whiteColor = "#ffffff"
     
       [[Languages.fr.menu.main]]
         weight = 2
+        name = "API Docs"
+        url = "/api-docs"
+
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "Controller"
+        url = "/controller"
+
+      [[Languages.fr.menu.main]]
+        weight = 2
         name = "Faq"
-        url = "/fr/faq"
-
+        url = "/faq"
+        
       [[Languages.fr.menu.main]]
         weight = 2
-        name = "contact"
-        url = "/fr/contact"
-
-      [[Languages.fr.menu.main]]
-        weight = 2
-        name = "les sujets"
+        name = "Tutorials"
+        url = "/tutorials"
         hasChildren = true
 
           [[Languages.fr.menu.main]]
-          parent = "pages"
+          parent = "tutorials"
           name = "Elements"
           URL = "/elements"
           weight = 1
 
           [[Languages.fr.menu.main]]
-          parent = "les sujets"
-          name = "Commencer"
-          URL = "/fr/installation"
+          parent = "tutorials"
+          name = "Installation"
+          URL = "/installation"
           weight = 2
 
           [[Languages.fr.menu.main]]
-          parent = "les sujets"
-          name = "Compte et facturation"
-          URL = "/fr/billing-pricing"
+          parent = "tutorials"
+          name = "Billing and Pricing"
+          URL = "/billing-pricing"
           weight = 3
 
           [[Languages.fr.menu.main]]
-          parent = "les sujets"
-          name = "Dépannage"
-          URL = "/fr/features"
+          parent = "tutorials"
+          name = "Features"
+          URL = "/features"
           weight = 4
+
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "contact"
+        url = "/contact"
+
 
     # banner
     [Languages.fr.params.banner]
