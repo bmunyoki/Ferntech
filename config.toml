@@ -40,25 +40,16 @@ whiteColor = "#ffffff"
         weight = 3
         name = "Faq"
         url = "/faq"
-        
-      [[Languages.en.menu.main]]
-
-          [[Languages.en.menu.main]]
-          parent = "tutorials"
-          name = "Installation"
-          URL = "/installation"
-          weight = 7
-
-          [[Languages.en.menu.main]]
-          parent = "tutorials"
-          name = "Elements"
-          URL = "/elements"
-          weight = 6
 
       [[Languages.en.menu.main]]
         weight = 5
         name = "contact"
         url = "https://infinitefingers.us18.list-manage.com/subscribe?u=6d033c7a74b56324c55a1c895&id=161d71d50c"
+
+      [[Languages.en.menu.main]]
+        weight = 6
+        name = "Tutorials"
+        url = "/tutorials"
 
 
 

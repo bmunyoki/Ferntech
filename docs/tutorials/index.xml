@@ -13,53 +13,15 @@
     
     
     <item>
-      <title>Linux</title>
-      <link>https://bmunyoki.github.io/Ferntech/tutorials/linux/</link>
+      <title>Get Company List</title>
+      <link>https://bmunyoki.github.io/Ferntech/tutorials/company-list/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
-      <guid>https://bmunyoki.github.io/Ferntech/tutorials/linux/</guid>
-      <description>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
-A simple primary alert—check it out!  Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
-    </item>
-    
-    <item>
-      <title>Mac OS</title>
-      <link>https://bmunyoki.github.io/Ferntech/tutorials/mac/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://bmunyoki.github.io/Ferntech/tutorials/mac/</guid>
-      <description>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
-A simple primary alert—check it out!  Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
-    </item>
-    
-    <item>
-      <title>Routing</title>
-      <link>https://bmunyoki.github.io/Ferntech/tutorials/routing/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://bmunyoki.github.io/Ferntech/tutorials/routing/</guid>
-      <description>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
-A simple primary alert—check it out!  Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://bmunyoki.github.io/Ferntech/tutorials/ubuntu/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://bmunyoki.github.io/Ferntech/tutorials/ubuntu/</guid>
-      <description>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
-A simple primary alert—check it out!  Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://bmunyoki.github.io/Ferntech/tutorials/windows/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://bmunyoki.github.io/Ferntech/tutorials/windows/</guid>
-      <description>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
-A simple primary alert—check it out!  Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
+      <guid>https://bmunyoki.github.io/Ferntech/tutorials/company-list/</guid>
+      <description>This URL provides a straight list of companies to which you have access as a Ferntech user:
+https://api-staging.infinitefingers.com/api/companies/  To get the company list in JSON format, follow the following URL:
+https://api-staging.infinitefingers.com/api/companies/hierarchy/  The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:
+Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
     </item>
     
   </channel>

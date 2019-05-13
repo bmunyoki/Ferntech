@@ -1,5 +1,5 @@
 ---
-title: "Mac OS"
+title: "Get Company List"
 date: 2018-12-29T11:02:05+06:00
 type: "post"
 author: "Somrat"
@@ -8,19 +8,22 @@ author: "Somrat"
 
   
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+This URL provides a straight list of companies to which you have access as a Ferntech user:
 
 <div class="alert rounded-0 alert-secondary">
-  A simple primary alert—check it out!
+	https://api-staging.infinitefingers.com/api/companies/
 </div>
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+To get the company list in JSON format, follow the following URL: 
 
-### Image Example
+<div class="alert rounded-0 alert-secondary">
+	https://api-staging.infinitefingers.com/api/companies/hierarchy/
+</div>
 
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
+The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:
 
-![image example](../../../../images/img-5.jpg "image")
+
+![image example](/images/companies-list.png "image")
 
 Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
 
