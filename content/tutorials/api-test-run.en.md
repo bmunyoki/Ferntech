@@ -142,7 +142,8 @@ The produced result is as show below which has information about the devices con
 						"1": "490613C5",
 						"2": "48EA0245"
 					}
-				},"device_software": {
+				},
+				"device_software": {
 					"variostring": {
 						"1": "1.6.24",
 						"2": "1.6.24"
