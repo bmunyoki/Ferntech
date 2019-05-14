@@ -16,7 +16,7 @@ This guide helps you navigate your way from logging in, all the way to extractin
 Use the following URL with your username and password to login:
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/auth/login/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/auth/login/" title="Login"> https://api-staging.infinitefingers.com/api/auth/login/ </a>
 </div>
 
 Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a JSON format within the browser window.
@@ -25,13 +25,13 @@ Once logged in, one should have view only access. Using any link in the remainin
 This URL provides a straight list of companies to which you have access as a Ferntech user:
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/companies/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/companies/" title="Get Company List">https://api-staging.infinitefingers.com/api/companies/</a>
 </div>
 
 To get the company list in JSON format, follow the following URL: 
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/companies/hierarchy/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/companies/hierarchy/" title="Company Hierarchy">https://api-staging.infinitefingers.com/api/companies/hierarchy/</a>
 </div>
 
 The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:
@@ -43,13 +43,13 @@ The JSON also shows how the companies are related to each other. This is how the
 From the company list query above, each company has a company ID. For this test run, we shall be using company ID 5 (Asantys marked in Magenta). The query below provides a list of systems which belong to the Asantys company:
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/for-company/5/?paginate=1
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/for-company/5/?paginate=1" title="Company System List">https://api-staging.infinitefingers.com/api/systems/for-company/5/?paginate=1</a>
 </div>
 
 To get a single system, pass the system ID as show in the below query. The system we are interested in is has ID 4.
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/4/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/4/" title="Single System">https://api-staging.infinitefingers.com/api/systems/4/</a>
 </div>
 
 To have a better feel of what the Asantys system consists of, below is a single line communication diagram, where UMC = Universal Microgrid Controller.
@@ -60,15 +60,15 @@ To have a better feel of what the Asantys system consists of, below is a single 
 Now that we know the company and the system, we can the system ID to the following endpoint to get the controllers assigned to the system.
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/controller-instances/?system_id=4
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/controller-instances/?system_id=4" title="Controller List for a System">https://api-staging.infinitefingers.com/api/systems/controller-instances/?system_id=4</a>
 </div>
 
 The above produces a list of 3 controllers assigned to the system, each of which has specific subsystems assigned to them. The ID of the controllers which belong to this system are IDs 8, 9 and 10
 
 <div class="alert rounded-0 alert-secondary">
-	ID 8 (https://api-staging.infinitefingers.com/api/systems/controller-instances/8/)<br>
-	ID 9 (https://api-staging.infinitefingers.com/api/systems/controller-instances/9/)<br>
-	ID 10 (https://api-staging.infinitefingers.com/api/systems/controller-instances/10/)
+	ID 8 (<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/controller-instances/8/" title="Get Controller Instance">https://api-staging.infinitefingers.com/api/systems/controller-instances/8/</a>)<br>
+	ID 9 (<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/controller-instances/9/" title="Get Controller Instance">https://api-staging.infinitefingers.com/api/systems/controller-instances/9/</a>)<br>
+	ID 10 (<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/controller-instances/10/" title="Get Controller Instance">https://api-staging.infinitefingers.com/api/systems/controller-instances/10/</a>)
 </div> 
 
 ### Getting Details of a Subsystem
@@ -77,7 +77,7 @@ The above produces a list of 3 controllers assigned to the system, each of which
 Now we are going to look at the Studer subsystem which has ID 10 (ID = 10). This subsystem is represented by the Studer XCom-CAN which is a bit like a gateway into the Studer world. Each subsystem in the Ferntech ecosystem is represented by driver and each driver is defined by two files:
 
 1. JSON Meta File - This file describes what can be contained within the config file.
-2. JSON Config File - Contains the actual configuration and log parameter values for a particular device
+1. JSON Config File - Contains the actual configuration and log parameter values for a particular device
 
 <br>
 For this particular system, the following number and type of Studer devices can be connected to a single XCom-CAN at once:
@@ -90,7 +90,7 @@ For this particular system, the following number and type of Studer devices can 
 The above information is defined in the meta file which is returned with the subsystem instance. For example, to get Studer with the ID 10 (ID = 10), use the following:
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/subsystem-instances/10/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/10/" title="Get subsystem details">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/10/</a>
 </div> 
 
 With the result, you can search for the following text:
@@ -106,7 +106,7 @@ With the result, you can search for the following text:
 To get the number of devices connected to a given substem, browse the following URL,
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-subsystem-info/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-subsystem-info/" title="Get Devices Connected to a System">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-subsystem-info/</a>
 </div> 
 
 Then enter the following JSON into the context textfield and hit <strong>POST</strong> button
@@ -158,7 +158,7 @@ The produced result is as show below which has information about the devices con
 To find how the devices are configued, run the following query:
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/" title="Get Device Configuration">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/</a>
 </div>
 
 and enter the below JSON in the contest field:
@@ -212,7 +212,7 @@ In among the response, there will be a config field which contains the actual co
 Browse the following endpoint to get the logged parameters for a device
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/" title="Get Device Logged Parameters">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/</a>
 </div>
 
 and enter the same JSON in the context field
@@ -266,7 +266,7 @@ The returned result is as follows which tells you what parameters are being logg
 Browse the following URL to extract historical data 
 
 <div class="alert rounded-0 alert-secondary">
-	https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/
+	<a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/" title="Extract Historical Data">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/</a>
 </div>
 
 and enter the below JSON in the context field

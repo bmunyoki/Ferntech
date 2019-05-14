@@ -21,7 +21,7 @@
       <description>Introduction Welcome to our API!
 This guide helps you navigate your way from logging in, all the way to extracting data for a particular parameter for a certain device.
 Login Use the following URL with your username and password to login:
-https://api-staging.infinitefingers.com/api/auth/login/  Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a JSON format within the browser window.</description>
+https://api-staging.infinitefingers.com/api/auth/login/   Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a JSON format within the browser window.</description>
     </item>
     
   </channel>
