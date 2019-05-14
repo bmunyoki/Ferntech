@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Ferntech 2018.</copyright>
-    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 11:02:05 +0600</lastBuildDate>
     
 	<atom:link href="https://bmunyoki.github.io/Ferntech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>API Test Run</title>
+      <link>https://bmunyoki.github.io/Ferntech/tutorials/api-test-run/</link>
+      <pubDate>Tue, 14 May 2019 11:02:05 +0600</pubDate>
+      
+      <guid>https://bmunyoki.github.io/Ferntech/tutorials/api-test-run/</guid>
+      <description>Introduction Welcome to our API!
+This guide helps you navigate your way from logging in, all the way to extracting data for a particular parameter for a certain device.
+Login Use the following URL with your username and password to login:
+https://api-staging.infinitefingers.com/api/auth/login/  Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a JSON format within the browser window.</description>
+    </item>
     
     <item>
       <title>Customer instructions for change of ownership</title>
@@ -20,18 +32,6 @@
       <guid>https://bmunyoki.github.io/Ferntech/controller/ownership/</guid>
       <description>Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
 A simple primary alert—check it out!  Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
-    </item>
-    
-    <item>
-      <title>Get Company List</title>
-      <link>https://bmunyoki.github.io/Ferntech/tutorials/company-list/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://bmunyoki.github.io/Ferntech/tutorials/company-list/</guid>
-      <description>This URL provides a straight list of companies to which you have access as a Ferntech user:
-https://api-staging.infinitefingers.com/api/companies/  To get the company list in JSON format, follow the following URL:
-https://api-staging.infinitefingers.com/api/companies/hierarchy/  The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.</description>
     </item>
     
     <item>

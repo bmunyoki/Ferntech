@@ -1,0 +1,459 @@
+<head>
+  <meta charset="utf-8">
+  <title>API Test Run</title>
+
+  <meta name="generator" content="Hugo 0.55.5" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://bmunyoki.github.io/Ferntech/plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://bmunyoki.github.io/Ferntech/plugins/themify-icons/themify-icons.css">
+  <!-- highlight -->
+  <link rel="stylesheet" href="https://bmunyoki.github.io/Ferntech/plugins/highlight/hybrid.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+  <style>
+  :root{
+    --primary-color:#02007e;
+    --secondary-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+  }  
+  </style>
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://bmunyoki.github.io/Ferntech/css/style.min.css" integrity="" media="screen">
+
+  <!-- jquiry -->
+  <script src="https://bmunyoki.github.io/Ferntech/plugins/jquery/jquery-1.12.4.js"></script>
+
+  <!-- jquary ui -->
+  <script src="https://bmunyoki.github.io/Ferntech/plugins/jquery/jquery-ui.js"></script>
+
+  <!--Favicon-->
+  <link rel="icon" href="https://bmunyoki.github.io/Ferntech/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<!-- navigation -->
+<header class="shadow-bottom sticky-top bg-white">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="https://bmunyoki.github.io/Ferntech/" style="font-size: 28px; font-weight: 600">
+      
+      Ferntech
+  </a>
+  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navigation">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="https://bmunyoki.github.io/Ferntech/">Home</a>
+      </li>
+      
+      
+      <li class="nav-item">
+          <a class="nav-link text-dark" href="/Ferntech/api-docs">API Docs</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+          <a class="nav-link text-dark" href="/Ferntech/controller">Controller</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+          <a class="nav-link text-dark" href="/Ferntech/faq">Faq</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+          <a class="nav-link text-dark" href="https://infinitefingers.us18.list-manage.com/subscribe?u=6d033c7a74b56324c55a1c895&amp;id=161d71d50c">contact</a>
+      </li>
+      
+      
+      
+      <li class="nav-item">
+          <a class="nav-link text-dark" href="/Ferntech/tutorials">Tutorials</a>
+      </li>
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="single pt-5 bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="p-4 bg-white sticky-top top-100">
+            
+            <nav class="sidebar-menu">
+              <ul class="list-styled">
+            <li class=""><a href="/Ferntech/api-docs/">API Docs</a>
+            </li>
+            <li class=""><a href="/Ferntech/controller/">Controller</a>
+              <ul class="">
+            <li class=""><a href="/Ferntech/controller/ownership/">Customer instructions for change of ownership</a>
+            </li>
+            <li class=""><a href="/Ferntech/controller/bill/">How to pay your bill</a>
+            </li>
+            <li class=""><a href="/Ferntech/controller/manage/">Manage My Sprint account</a>
+            </li>
+            <li class=""><a href="/Ferntech/controller/payment/">Payment arrangements</a>
+            </li>
+            <li class=""><a href="/Ferntech/controller/profile/">Understand the different levels of profile</a>
+            </li></ul>
+              
+            </li>
+            <li class="parent d-block "><a href="/Ferntech/tutorials/">Tutorials</a>
+              <ul class="sub-menu">
+            <li class=" active "><a href="/Ferntech/tutorials/api-test-run/">API Test Run</a>
+            </li></ul>
+              
+            </li>
+            <li class=""><a href="/Ferntech/contact/">Contact</a>
+            </li>
+            <li class=""><a href="/Ferntech/elements/">Elements</a>
+            </li>
+            <li class=""><a href="/Ferntech/faq/">Frequently Asked Questions</a>
+            </li></ul>
+            </nav>
+
+            
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-5 bg-white">
+            <h2>API Test Run</h2>
+            
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Welcome to our API!</p>
+
+<p>This guide helps you navigate your way from logging in, all the way to extracting data for a particular parameter for a certain device.</p>
+
+<h3 id="login">Login</h3>
+
+<p>Use the following URL with your username and password to login:</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/auth/login/
+</div>
+
+<p>Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a JSON format within the browser window.</p>
+
+<h3 id="getting-company-list">Getting Company List</h3>
+
+<p>This URL provides a straight list of companies to which you have access as a Ferntech user:</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/companies/
+</div>
+
+<p>To get the company list in JSON format, follow the following URL:</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/companies/hierarchy/
+</div>
+
+<p>The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:</p>
+
+<p><img src="/Ferntech/static/images/companies-list.png" alt="image example" title="image" /></p>
+
+<h3 id="system-list-for-a-company">System List for a Company</h3>
+
+<p>From the company list query above, each company has a company ID. For this test run, we shall be using company ID 5 (Asantys marked in Magenta). The query below provides a list of systems which belong to the Asantys company:</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/for-company/5/?paginate=1
+</div>
+
+<p>To get a single system, pass the system ID as show in the below query. The system we are interested in is has ID 4.</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/4/
+</div>
+
+<p>To have a better feel of what the Asantys system consists of, below is a single line communication diagram, where UMC = Universal Microgrid Controller.</p>
+
+<p><img src="/Ferntech/static/images/Asantys.png" alt="image example" title="image" /></p>
+
+<h3 id="controller-list-for-a-system">Controller List for a System</h3>
+
+<p>Now that we know the company and the system, we can the system ID to the following endpoint to get the controllers assigned to the system.</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/controller-instances/?system_id=4
+</div>
+
+<p>The above produces a list of 3 controllers assigned to the system, each of which has specific subsystems assigned to them. The ID of the controllers which belong to this system are IDs 8, 9 and 10</p>
+
+<div class="alert rounded-0 alert-secondary">
+    ID 8 (https://api-staging.infinitefingers.com/api/systems/controller-instances/8/)<br>
+    ID 9 (https://api-staging.infinitefingers.com/api/systems/controller-instances/9/)<br>
+    ID 10 (https://api-staging.infinitefingers.com/api/systems/controller-instances/10/)
+</div> 
+
+<h3 id="getting-details-of-a-subsystem">Getting Details of a Subsystem</h3>
+
+<h4 id="driver-meta-files">Driver Meta Files</h4>
+
+<p>Now we are going to look at the Studer subsystem which has ID 10 (ID = 10). This subsystem is represented by the Studer XCom-CAN which is a bit like a gateway into the Studer world. Each subsystem in the Ferntech ecosystem is represented by driver and each driver is defined by two files:</p>
+
+<ol>
+<li>JSON Meta File - This file describes what can be contained within the config file.</li>
+<li>JSON Config File - Contains the actual configuration and log parameter values for a particular device</li>
+</ol>
+
+<p><br>
+For this particular system, the following number and type of Studer devices can be connected to a single XCom-CAN at once:</p>
+
+<p><li>9 x Xtenders</li>
+<li>15 x Variostring</li>
+<li>1 x BSP</li>
+<li>15 x Variotracks</li></p>
+
+<p>The above information is defined in the meta file which is returned with the subsystem instance. For example, to get Studer with the ID 10 (ID = 10), use the following:</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/subsystem-instances/10/
+</div> 
+
+<p>With the result, you can search for the following text:</p>
+
+<pre><code>&quot;devices&quot;: {
+    &quot;bsp&quot;: 1,
+    &quot;xtender&quot;: 9,
+    &quot;variotrack&quot;: 15,
+    &quot;variostring&quot;: 15
+}
+</code></pre>
+
+<h4 id="get-devices-connected-to-the-subsystem">Get Devices Connected to the Subsystem</h4>
+
+<p>To get the number of devices connected to a given substem, browse the following URL,</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-subsystem-info/
+</div> 
+
+<p>Then enter the following JSON into the context textfield and hit <strong>POST</strong> button</p>
+
+<pre><code>{
+    &quot;subsystem_instance&quot;: 10,
+    &quot;controller_instance&quot;: 9
+}
+</code></pre>
+
+<p>The produced result is as show below which has information about the devices connected to this Studer subsystem.</p>
+
+<pre><code>{
+    &quot;mqtt_response&quot;: {
+        &quot;success&quot;: true,
+        &quot;message&quot;: {
+            &quot;device_models&quot;: {
+                &quot;variostring&quot;: {
+                    &quot;1&quot;: &quot;VS-120&quot;,
+                    &quot;2&quot;: &quot;VS-120&quot;
+                }
+            },
+            &quot;device_numbers&quot;: {
+                &quot;xtender&quot;: 0,
+                &quot;variostring&quot;: 2,
+                &quot;bsp&quot;: 0,
+                &quot;variotrack&quot;: 0
+            },
+            &quot;device_phase&quot;: {
+                &quot;xtender&quot;: {}
+            },
+            &quot;device_serials&quot;: { 
+                &quot;variostring&quot;: {
+                    &quot;1&quot;: &quot;490613C5&quot;,
+                    &quot;2&quot;: &quot;48EA0245&quot;
+                }
+            },&quot;device_software&quot;: {
+                &quot;variostring&quot;: {
+                    &quot;1&quot;: &quot;1.6.24&quot;,
+                    &quot;2&quot;: &quot;1.6.24&quot;
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+<h4 id="getting-the-device-configuration">Getting the Device Configuration</h4>
+
+<p>To find how the devices are configued, run the following query:</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/
+</div>
+
+<p>and enter the below JSON in the contest field:</p>
+
+<pre><code>{
+    &quot;subsystem_instance&quot;: 10,
+    &quot;controller_instance&quot;: 9
+}
+</code></pre>
+
+<p>In among the response, there will be a config field which contains the actual config parameters as follows (Note this is just an extract)</p>
+
+<pre><code>&quot;config&quot;: {
+    &quot;variostring&quot;: {
+        &quot;min_delay_cycle&quot;: {
+            &quot;value&quot;: 1.0
+        },
+        &quot;new_cycle_v1_delay&quot;: {
+            &quot;value&quot;: 30.0
+        }, 
+        &quot;abs_duration&quot;: {
+            &quot;value&quot;: 120.0
+        },
+        &quot;equ_current&quot;: {
+            &quot;value&quot;: 80.0
+        },
+        &quot;equ_voltage&quot;: {
+            &quot;value&quot;: 62.4
+        },
+        &quot;new_cycle_v2&quot;: {
+            &quot;value&quot;: 47.2
+        },
+        &quot;abs_end_curr_trig&quot;: {
+            &quot;value&quot;: 0
+        },
+        &quot;equ_before_abs&quot;: {
+            &quot;value&quot;: 1
+        },
+        &quot;aux_2_relay_mode&quot;: {
+            &quot;value&quot;: 1.0
+        },
+        &quot;new_cycle_v1&quot;: {
+            &quot;value&quot;: 48.8
+        },
+        &quot;watchdog&quot;: {
+            &quot;value&quot;: 0
+        }
+    }
+}
+</code></pre>
+
+<h4 id="getting-logged-parameters-for-a-device">Getting Logged Parameters for a Device</h4>
+
+<p>Browse the following endpoint to get the logged parameters for a device</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/
+</div>
+
+<p>and enter the same JSON in the context field</p>
+
+<pre><code>{
+    &quot;subsystem_instance&quot;: 10,
+    &quot;controller_instance&quot;: 9
+}
+</code></pre>
+
+<p>The returned result is as follows which tells you what parameters are being logged in seconds and how often (Note the result below is an extract)</p>
+
+<pre><code>{
+    &quot;mqtt_response&quot;: {
+        &quot;success&quot;: true,
+        &quot;message&quot;: {
+            &quot;variostring&quot;: {
+                &quot;pv_2_a&quot;: {
+                    &quot;frequency&quot;: 60
+                },
+                &quot;pv_a&quot;: {
+                    &quot;frequency&quot;: 60
+                },
+                &quot;pv_1_w&quot;: {
+                    &quot;frequency&quot;: 60
+                },
+                &quot;pv_1_v&quot;: {
+                    &quot;frequency&quot;: 60
+                    },
+                    &quot;batt_a&quot;: {
+                        &quot;frequency&quot;: 60
+                    },
+                    &quot;scc_op_state&quot;: {
+                        &quot;frequency&quot;: 60
+                    },
+                    &quot;batt_phase&quot;: {
+                        &quot;frequency&quot;: 60
+                    },
+                    &quot;pv_2_v&quot;: {
+                        &quot;frequency&quot;: 60
+                    },
+                    &quot;pv_2_w&quot;: {
+                        &quot;frequency&quot;: 60
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+<h4 id="extracting-historical-data">Extracting Historical Data</h4>
+
+            <p class="post-meta border-bottom pb-3 mb-0">Updated on 14 May 2019</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer class="section bg-gray pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-md-left text-center">
+        <p>© Ferntech 2018.</p> 
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline mb-3">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://bmunyoki.github.io/"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://bmunyoki.github.io/"><i class="ti-github"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://bmunyoki.github.io/Ferntech/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- highlight -->
+<script src="https://bmunyoki.github.io/Ferntech/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Main Script -->
+
+<script src="https://bmunyoki.github.io/Ferntech/js/script.min.js"></script>

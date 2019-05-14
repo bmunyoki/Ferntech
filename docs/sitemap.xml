@@ -3,23 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bmunyoki.github.io/Ferntech/tutorials/api-test-run/</loc>
+    <lastmod>2019-05-14T11:02:05+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bmunyoki.github.io/Ferntech/</loc>
+    <lastmod>2019-05-14T11:02:05+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bmunyoki.github.io/Ferntech/api-docs/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url>
   
   <url>
     <loc>https://bmunyoki.github.io/Ferntech/controller/ownership/</loc>
-    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bmunyoki.github.io/Ferntech/</loc>
-    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bmunyoki.github.io/Ferntech/tutorials/company-list/</loc>
     <lastmod>2018-12-29T11:02:05+06:00</lastmod>
   </url>
   
