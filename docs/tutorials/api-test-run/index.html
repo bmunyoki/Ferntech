@@ -420,6 +420,65 @@ For this particular system, the following number and type of Studer devices can 
 
 <h4 id="extracting-historical-data">Extracting Historical Data</h4>
 
+<p>Browse the following URL to extract historical data</p>
+
+<div class="alert rounded-0 alert-secondary">
+    https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/
+</div>
+
+<p>and enter the below JSON in the context field</p>
+
+<pre><code>{
+    &quot;subsystem_instance&quot;: 10,
+    &quot;controller_instance&quot;: 9, 
+    &quot;start_datetime&quot;: &quot;2018-10-11 10:00:00.00&quot;, 
+    &quot;end_datetime&quot;: &quot;2018-10-11 14:00:00.00&quot;, 
+    &quot;device&quot;: &quot;variostring&quot;, 
+    &quot;field&quot;: &quot;batt_a&quot;, 
+    &quot;time&quot;: &quot;30m&quot;
+}
+</code></pre>
+
+<p>The returned reponse looks like:</p>
+
+<pre><code>[
+    {
+        &quot;time&quot;: &quot;2018-10-11T10:00:00Z&quot;,
+        &quot;mean&quot;: 6.0645259533895
+    },
+    {
+        &quot;time&quot;: &quot;2018-10-11T10:30:00Z&quot;,
+        &quot;mean&quot;: 6.2857134975276665
+    },
+    {
+        &quot;time&quot;: &quot;2018-10-11T11:00:00Z&quot;,
+        &quot;mean&quot;: 6.025993114406666},
+    {
+        &quot;time&quot;: &quot;2018-10-11T11:30:00Z&quot;,
+        &quot;mean&quot;: 6.249208818856167
+        },
+    { 
+        &quot;time&quot;: &quot;2018-10-11T12:00:00Z&quot;,
+        &quot;mean&quot;: 6.042058395127333},
+    {
+        &quot;time&quot;: &quot;2018-10-11T12:30:00Z&quot;,
+        &quot;mean&quot;: 6.3448192531780006
+    },
+    {
+        &quot;time&quot;: &quot;2018-10-11T13:00:00Z&quot;,
+        &quot;mean&quot;: 1.514127328301715
+    },
+    {
+        &quot;time&quot;: &quot;2018-10-11T13:30:00Z&quot;,
+        &quot;mean&quot;: 4.700638903601667
+    },
+    {
+        &quot;time&quot;:&quot;2018-10-11T14:00:00Z&quot;,
+        &quot;mean&quot;:5.2570842161
+    }
+]
+</code></pre>
+
             <p class="post-meta border-bottom pb-3 mb-0">Updated on 14 May 2019</p></div>
       </div>
     </div>

@@ -262,3 +262,59 @@ The returned result is as follows which tells you what parameters are being logg
 	}
 
 #### Extracting Historical Data
+Browse the following URL to extract historical data 
+
+<div class="alert rounded-0 alert-secondary">
+	https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/
+</div>
+
+and enter the below JSON in the context field
+
+	{
+		"subsystem_instance": 10,
+		"controller_instance": 9, 
+		"start_datetime": "2018-10-11 10:00:00.00", 
+		"end_datetime": "2018-10-11 14:00:00.00", 
+		"device": "variostring", 
+		"field": "batt_a", 
+		"time": "30m"
+	}
+
+The returned reponse looks like:
+
+	[
+		{
+			"time": "2018-10-11T10:00:00Z",
+			"mean": 6.0645259533895
+		},
+		{
+			"time": "2018-10-11T10:30:00Z",
+			"mean": 6.2857134975276665
+		},
+		{
+			"time": "2018-10-11T11:00:00Z",
+			"mean": 6.025993114406666},
+		{
+			"time": "2018-10-11T11:30:00Z",
+			"mean": 6.249208818856167
+			},
+		{ 
+			"time": "2018-10-11T12:00:00Z",
+		    "mean": 6.042058395127333},
+		{
+			"time": "2018-10-11T12:30:00Z",
+			"mean": 6.3448192531780006
+		},
+		{
+			"time": "2018-10-11T13:00:00Z",
+			"mean": 1.514127328301715
+		},
+		{
+			"time": "2018-10-11T13:30:00Z",
+			"mean": 4.700638903601667
+		},
+		{
+			"time":"2018-10-11T14:00:00Z",
+			"mean":5.2570842161
+		}
+	]
