@@ -162,41 +162,44 @@
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/auth/login/" title="Login"> https://api-staging.infinitefingers.com/api/auth/login/ </a>
 </div>
 
-<p>Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a JSON format within the browser window.</p>
+<p>Once logged in, one should have view only access. Using any link in the remaining part of this guide on a browser should return data in a <code>JSON</code> format within the browser window.</p>
 
 <h3 id="getting-company-list">Getting Company List</h3>
 
-<p>This URL provides a straight list of companies to which you have access as a Ferntech user:</p>
+<div class="alert rounded-0 alert-info">
+  <i class="ti-info icons"></i>This section assumes you are logged in.
+</div>
+This URL provides a straight list of companies to which you have access as a Ferntech user:
 
 <div class="alert rounded-0 alert-secondary">
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/companies/" title="Get Company List">https://api-staging.infinitefingers.com/api/companies/</a>
 </div>
 
-<p>To get the company list in JSON format, follow the following URL:</p>
+<p>To get the company list in <code>JSON</code> format, follow the following URL:</p>
 
 <div class="alert rounded-0 alert-secondary">
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/companies/hierarchy/" title="Company Hierarchy">https://api-staging.infinitefingers.com/api/companies/hierarchy/</a>
 </div>
 
-<p>The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:</p>
+<p>The <code>JSON</code> also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:</p>
 
 <p><img src="../companies-list-2.png" alt="Companies list" /></p>
 
 <h3 id="system-list-for-a-company">System List for a Company</h3>
 
-<p>From the company list query above, each company has a company ID. For this test run, we shall be using company ID 5 (Asantys marked in Magenta). The query below provides a list of systems which belong to the Asantys company:</p>
+<p>From the company list query above, each company has a company ID. For this test run, we shall be using company <code>ID 5</code> (Asantys marked in Magenta). The query below provides a list of systems which belong to the Asantys company:</p>
 
 <div class="alert rounded-0 alert-secondary">
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/for-company/5/?paginate=1" title="Company System List">https://api-staging.infinitefingers.com/api/systems/for-company/5/?paginate=1</a>
 </div>
 
-<p>To get a single system, pass the system ID as show in the below query. The system we are interested in is has ID 4.</p>
+<p>To get a single system, pass the system ID as show in the below query. The system we are interested in is has <code>ID 4</code>.</p>
 
 <div class="alert rounded-0 alert-secondary">
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/4/" title="Single System">https://api-staging.infinitefingers.com/api/systems/4/</a>
 </div>
 
-<p>To have a better feel of what the Asantys system consists of, below is a single line communication diagram, where UMC = Universal Microgrid Controller.</p>
+<p>To have a better feel of what the Asantys system consists of, below is a single line communication diagram, where <code>UMC = Universal Microgrid Controller</code>.</p>
 
 <p><img src="../asantys.png" alt="Asantys system single line communication diagram" /></p>
 
@@ -220,7 +223,7 @@
 
 <h4 id="driver-meta-files">Driver Meta Files</h4>
 
-<p>Now we are going to look at the Studer subsystem which has ID 10 (ID = 10). This subsystem is represented by the Studer XCom-CAN which is a bit like a gateway into the Studer world. Each subsystem in the Ferntech ecosystem is represented by driver and each driver is defined by two files:</p>
+<p>Now we are going to look at the Studer subsystem which has ID 10 (<code>ID = 10</code>). This subsystem is represented by the <code>Studer XCom-CAN</code> which is a bit like a gateway into the Studer world. Each subsystem in the Ferntech ecosystem is represented by driver and each driver is defined by two files:</p>
 
 <ol>
 <li>JSON Meta File - This file describes what can be contained within the config file.</li>
@@ -235,7 +238,7 @@ For this particular system, the following number and type of Studer devices can 
 <li>1 x BSP</li>
 <li>15 x Variotracks</li></p>
 
-<p>The above information is defined in the meta file which is returned with the subsystem instance. For example, to get Studer with the ID 10 (ID = 10), use the following:</p>
+<p>The above information is defined in the meta file which is returned with the subsystem instance. For example, to get Studer with the ID 10 (<code>ID = 10</code>), use the following:</p>
 
 <div class="alert rounded-0 alert-secondary">
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/10/" title="Get subsystem details">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/10/</a>
@@ -259,7 +262,7 @@ For this particular system, the following number and type of Studer devices can 
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-subsystem-info/" title="Get Devices Connected to a System">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-subsystem-info/</a>
 </div> 
 
-<p>Then enter the following JSON into the context textfield and hit <strong>POST</strong> button</p>
+<p>Then enter the following JSON into the context textfield and hit <code>POST</code> button</p>
 
 <pre><code>{
     &quot;subsystem_instance&quot;: 10,
@@ -370,7 +373,7 @@ For this particular system, the following number and type of Studer devices can 
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/" title="Get Device Logged Parameters">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/get-config/</a>
 </div>
 
-<p>and enter the same JSON in the context field</p>
+<p>and enter the same <code>JSON</code> in the context field</p>
 
 <pre><code>{
     &quot;subsystem_instance&quot;: 10,
@@ -427,7 +430,7 @@ For this particular system, the following number and type of Studer devices can 
     <a target="_blank" href="https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/" title="Extract Historical Data">https://api-staging.infinitefingers.com/api/systems/subsystem-instances/historical-data/</a>
 </div>
 
-<p>and enter the below JSON in the context field</p>
+<p>and enter the below <code>JSON</code> in the context field</p>
 
 <pre><code>{
     &quot;subsystem_instance&quot;: 10,
