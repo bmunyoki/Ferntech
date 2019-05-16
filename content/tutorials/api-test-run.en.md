@@ -37,7 +37,7 @@ To get the company list in JSON format, follow the following URL:
 The JSON also shows how the companies are related to each other. This is how the hierarchy is represented in the portal:
 
 
-![image example](/Ferntech/static/images/companies-list.png "image")
+<img src="../companies-list-2.png" alt="Companies list" />
 
 ### System List for a Company
 From the company list query above, each company has a company ID. For this test run, we shall be using company ID 5 (Asantys marked in Magenta). The query below provides a list of systems which belong to the Asantys company:
@@ -54,7 +54,7 @@ To get a single system, pass the system ID as show in the below query. The syste
 
 To have a better feel of what the Asantys system consists of, below is a single line communication diagram, where UMC = Universal Microgrid Controller.
 
-![image example](/Ferntech/static/images/Asantys.png "image")
+<img src="../asantys.png" alt="Asantys system single line communication diagram" />
 
 ### Controller List for a System
 Now that we know the company and the system, we can the system ID to the following endpoint to get the controllers assigned to the system.
